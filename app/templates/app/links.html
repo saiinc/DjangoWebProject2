@@ -1,0 +1,12 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+    {% load staticfiles %}
+
+<a href ="https://www.noip.com/" target="_blank"><img src="{% static 'app/content/logo-white.png' %}" alt="Logo 1"/></a>
+
+{% endblock %}

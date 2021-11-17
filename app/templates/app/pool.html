@@ -1,0 +1,29 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+{% if form != None %}
+    <br><h2>Оставьте пожалуйста отзыв о качестве предоставленных услуг</h2><br>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+            {{ form.name }}<br><br>
+            <label for="{{ form.city.id_for_label }}">{{ form.city.label }}</label>
+            {{ form.city }}<br><br>
+            <label for="{{ form.mark.id_for_label }}">{{ form.mark.label }}</label>
+            {{ form.mark }}<br>
+            <div><label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label></div>
+            <div>{{ form.message }}</div><br><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+{% else %}
+    <br><h2>Боагодарим за вашу оценку!</h2>
+    <h3>Вы отправили на портал следующую информацию:</h3>
+    <ul>
+        <li><span>Имя:</span> {{ data.name }}</li>
+        <li><span>Город:</span> {{ data.city }}</li>
+        <li><span>Оценка сервиса:</span> {{ data.mark }}</li>
+        <li><span>Мнение о сервисе:</span> {{ data.message }}</li>
+    </ul>
+{% endif %}
+{% endblock %}
