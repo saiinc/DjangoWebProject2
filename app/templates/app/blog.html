@@ -10,6 +10,7 @@
     <h4> {{post.posted}} </h4>
     <p> {{post.description}} </p>    
     <p><a href="{% url 'blogpost' parametr=post.id %}"> Читать далее </a> </p>
+    <p style="color:gray"> {{post.author}} </p>    
 </div>
 {% endfor %}
 

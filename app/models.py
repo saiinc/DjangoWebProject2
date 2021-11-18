@@ -17,6 +17,7 @@ class Blog(models.Model):
     content = models.TextField(verbose_name = "Полное содержание")
     posted = models.DateTimeField(default = datetime.now(), db_index = True, verbose_name = "Опубликована")
     image = models.FileField(default = 'temp.jpg', verbose_name = "Путь к картинке")
+    author = models.ForeignKey(User, null=True, blank=True, on_delete = models.SET_NULL, verbose_name = "Автор")
  
 
     def get_absolute_url(self):     # метод возвращает строку с уникальным интернет-адресом записи
