@@ -13,7 +13,45 @@
             {{ form.mark }}<br>
             <div><label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label></div>
             <div>{{ form.message }}</div><br><br>
-            <input type="submit" value="Отправить">
+            <input id="b1" type="submit" value="Отправить">
+            <script>
+                function b1_over()
+                {
+                    $('#b1').css('background-color', 'yellow')
+                }
+
+                function b1_out()
+                {
+                    $('#b1').css('background-color', 'WhiteSmoke')
+                }
+
+                function field_name_focus()
+                {
+                    $('#id_name').css('background-color', 'silver')
+                }
+
+                 function field_name_blur()
+                {
+                    $('#id_name').css('background-color', 'white')
+                }
+
+                function field_city_focus()
+                {
+                    $('#id_city').css('background-color', 'silver')
+                }
+
+                 function field_city_blur()
+                {
+                    $('#id_city').css('background-color', 'white')
+                }
+
+                $('#b1').mouseover(b1_over);
+                $('#b1').mouseout(b1_out);
+                $('#id_name').focus(field_name_focus);
+                $('#id_name').blur(field_name_blur);
+                $('#id_city').focus(field_city_focus);
+                $('#id_city').blur(field_city_blur);
+            </script>
         </form>
     </div>
 {% else %}
