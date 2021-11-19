@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\static\app\content\20130405234230179.png" />
+    <Content Include="app\static\app\content\logo_autumn.png" />
     <Content Include="app\templates\app\blog.html" />
     <Content Include="app\templates\app\blogpost.html" />
     <Content Include="app\templates\app\links.html" />

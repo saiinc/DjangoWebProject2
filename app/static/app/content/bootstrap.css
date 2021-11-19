@@ -4500,7 +4500,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #333333;
 }
 
-/*цвет фона навигационной панели – меню*/
+/*пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ*/
 .navbar-inverse {
     background-color: 4B0082;
     border-color: #080808;
@@ -4520,12 +4520,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #999999;
 }
 
-/*цвет шрифта меню*/
+/*пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ*/
     .navbar-inverse .navbar-nav > li > a {
         color: A9A9A9;
     }
 
-/*стиль пунктов меню при наведении мыши*/
+/*пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ*/
         .navbar-inverse .navbar-nav > li > a:hover,
         .navbar-inverse .navbar-nav > li > a:focus {
             color: FFB6C1;
