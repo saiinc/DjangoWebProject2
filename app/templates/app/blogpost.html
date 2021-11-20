@@ -7,7 +7,7 @@
     <img src="{{ post_1.image.url }}" alt="Картинка" width="300"/>
 {% endif %}
 <p> {{post_1.content|linebreaksbr}} </p>      {# вывод текста по абзацам#}
-<p>Опубликовано: {{post_1.author}} {{post_1.posted}}</p>
+<p class="author">     Опубликовано: {{post_1.author}} {{post_1.posted}}</p>
 <p><a href="{% url 'blog' %}"> Назад </a> </p>
 
 {% if user.is_authenticated %}
@@ -21,8 +21,6 @@
 {% else %}
     <h3> Для добавления своего комментария, пожалуйста, авторизуйтесь </h3>
 {% endif %}
-
-<div> {{number}}</div> # вывод количества комментариев
 
 {% for comment in comments %}
     <hr/>

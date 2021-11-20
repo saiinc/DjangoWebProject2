@@ -61,6 +61,7 @@ def videopost(request):
         request,
         'app/videopost.html',
         {
+            'title':'Видеоблог',
             'year':datetime.now().year,
         }
     )

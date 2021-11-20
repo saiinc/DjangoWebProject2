@@ -44,3 +44,8 @@ input[type="checkbox"].input-validation-error {
 h5 {
     color: 6495ED;
 }
+
+.author {
+    color:gray;
+    font-size: x-small;
+}
